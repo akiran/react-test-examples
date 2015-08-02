@@ -1,7 +1,7 @@
 // renderIntoDocument method
 // Test content, style, classes
 
-describe('sample react test', function() {
+describe('hello component', function() {
   var ReactTestUtils = React.addons.TestUtils;
   var Hello = require('../src/hello');
 
