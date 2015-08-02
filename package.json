@@ -1,0 +1,32 @@
+{
+  "name": "react-test-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.8.20",
+    "babel-loader": "^5.3.2",
+    "es5-shim": "^4.1.10",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-webpack": "^1.7.0",
+    "phantomjs": "^1.9.17",
+    "webpack": "^1.10.5"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "karma-coverage": "^0.4.2",
+    "react": "^0.13.3"
+  }
+}
