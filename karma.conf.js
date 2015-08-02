@@ -31,7 +31,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'test/**/*.jsx': ['webpack' ,'coverage'],
+        'test/**/*.jsx': ['webpack'],
     },
 
     coverageReporter: {
@@ -43,7 +43,13 @@ module.exports = function(config) {
         module: {
             loaders: [
                 {test: /\.(js|jsx)$/, loaders: ['babel']}
-            ]
+            ],
+            postLoaders: [{
+                test: /\.(js|jsx)$/,
+                exclude: /(test|node_modules|bower_components)\//,
+                loader: 'istanbul-instrumenter'
+            } ]
+
         },
         externals: {
             react: 'React'
