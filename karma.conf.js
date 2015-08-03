@@ -19,7 +19,6 @@ module.exports = function(config) {
         'node_modules/react/dist/react-with-addons.js',
         'node_modules/jquery/dist/jquery.js',
         'test/**/*.jsx',
-        'test/**/*.js',
     ],
 
 
